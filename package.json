@@ -1,0 +1,25 @@
+{
+  "name": "mailspring-auth-results",
+  "main": "./lib/main",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "mailspring": ">=1.6.3"
+  },
+  "windowTypes": {
+    "default": true,
+    "composer": true
+  },
+  "description": "mailspring-auth-results is a security-focused plugin for Mailspring that analyzes email authentication headers and displays a clear summary of their status directly in the message view.",
+  "devDependencies": {
+    "@types/react": "^16.7.22",
+    "typescript": "^3.6.3"
+  },
+  "license": "MIT"
+}
