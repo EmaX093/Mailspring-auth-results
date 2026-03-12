@@ -1,4 +1,5 @@
 # mailspring-auth-results
+NOTE: This plugin works if the mail server support Authentication-Result header!
 
 **mailspring-auth-results** is a security-focused plugin for Mailspring that analyzes email authentication headers and displays a clear summary of their status directly in the message view.
 
