@@ -44,6 +44,8 @@ class AuthStatusBridge extends React.Component {
       await TaskQueue.waitForPerformRemote(task);
 
       const source = fs.readFileSync(filepath, 'utf8');
+      // The .eml is a full copy of the message (attachments included); don't leave it in the temp dir.
+      fs.unlink(filepath, () => {});
 
       const normalized = source.replace(/\r?\n[ \t]+/g, ' ');
 
